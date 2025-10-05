@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ApprenticeshipPage() {
     return (
-        <>
+        <div className="relative flex min-h-screen flex-col">
             <section className="relative py-24 px-4">
                 {/* Background accent */}
                 <div
@@ -69,204 +69,226 @@ export default function ApprenticeshipPage() {
                 </div>
             </section>
 
-            <section className="relative py-6 px-4">
-                <div className="mx-auto max-w-5xl space-y-12">
-                    {/* Narrative Intro */}
-                    <div className="space-y-4">
-                        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-                            For those who see learning as creation.
-                        </h2>
-                        <p className="text-white/70 leading-relaxed">
-                            At DevSphere, we believe the best way to learn is to
-                            build. The Apprenticeship Program is not a course.
-                            It is not a club role. It is a journey where you
-                            take ideas and turn them into something real.
-                        </p>
-                        <p className="text-white/70 leading-relaxed">
-                            We created this program for people who are curious,
-                            driven, and restless. People who want to shape
-                            things with their own hands. People who are not
-                            waiting for permission to start.
-                        </p>
-                    </div>
-
-                    {/* What You Get */}
-                    <div className="space-y-6">
-                        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-                            What You Get as an Apprentice
-                        </h2>
+            <section className="relative flex-1 px-4 pb-12 pt-6">
+                <div className="mx-auto flex h-full max-w-5xl flex-col">
+                    <div className="space-y-12">
+                        {/* Narrative Intro */}
                         <div className="space-y-4">
-                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                                <h3 className="font-medium mb-2">
-                                    1. Mentorship that changes you
-                                </h3>
-                                <p className="text-white/70 text-sm">
-                                    You will work closely with core members who
-                                    care deeply about your growth. They will
-                                    guide you, challenge you, and expect the
-                                    best from you. You will learn how to think,
-                                    not just what to do.
-                                </p>
-                            </div>
-                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                                <h3 className="font-medium mb-2">
-                                    2. Real work that matters
-                                </h3>
-                                <p className="text-white/70 text-sm">
-                                    You will take on projects that have impact.
-                                    You will write code, design visuals, tell
-                                    stories, build systems. You will see your
-                                    work live in front of people and make a
-                                    difference.
-                                </p>
-                            </div>
-                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                                <h3 className="font-medium mb-2">
-                                    3. Recognition for what you create
-                                </h3>
-                                <p className="text-white/70 text-sm">
-                                    Every task you complete earns you points.
-                                    The best contributors are celebrated every
-                                    month. We tell your story to the community
-                                    because great work deserves to be seen.
-                                </p>
-                            </div>
-                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                                <h3 className="font-medium mb-2">
-                                    4. A path to leadership
-                                </h3>
-                                <p className="text-white/70 text-sm">
-                                    After three months of consistent effort, you
-                                    can apply to join the DevSphere core team.
-                                    You will lead projects, mentor new
-                                    apprentices, and shape the culture of the
-                                    club. This is where builders become leaders.
-                                </p>
-                            </div>
-                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                                <h3 className="font-medium mb-2">
-                                    5. A community that believes in you
-                                </h3>
-                                <p className="text-white/70 text-sm">
-                                    You will join a circle of learners who dream
-                                    big and build together. Here, everyone is
-                                    both a student and a teacher. We learn from
-                                    each other, push each other, and grow
-                                    together.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Expectations */}
-                    <div className="space-y-4">
-                        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-                            What We Expect from You
-                        </h2>
-                        <div className="grid gap-4 md:grid-cols-2">
-                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                                <h3 className="font-medium mb-1">Show Up</h3>
-                                <p className="text-white/70 text-sm">
-                                    Be present. Be consistent. Do the work even
-                                    when it is hard.
-                                </p>
-                            </div>
-                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                                <h3 className="font-medium mb-1">
-                                    Collaborate
-                                </h3>
-                                <p className="text-white/70 text-sm">
-                                    Learn from others. Share what you know.
-                                    Building together is always better than
-                                    building alone.
-                                </p>
-                            </div>
-                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                                <h3 className="font-medium mb-1">
-                                    Stay Curious
-                                </h3>
-                                <p className="text-white/70 text-sm">
-                                    Ask questions. Try new things. Curiosity is
-                                    the fuel for creativity.
-                                </p>
-                            </div>
-                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                                <h3 className="font-medium mb-1">
-                                    Lead by Action
-                                </h3>
-                                <p className="text-white/70 text-sm">
-                                    Do not wait to be told what to do. Start.
-                                    Build. Fix. Improve. Inspire.
-                                </p>
-                            </div>
-                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                                <h3 className="font-medium mb-1">
-                                    Own Your Journey
-                                </h3>
-                                <p className="text-white/70 text-sm">
-                                    What you get from this program depends on
-                                    what you give. You decide how far you go.
-                                </p>
-                            </div>
-                            <div className="rounded-xl border border-white/10 bg-white/5 p-5">
-                                <h3 className="font-medium mb-1">
-                                    Don't Be Afraid to Make Mistakes
-                                </h3>
-                                <p className="text-white/70 text-sm">
-                                    Experiment boldly. Mistakes are data —
-                                    reflect, iterate, and improve.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Why Join */}
-                    <div className="space-y-4">
-                        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-                            Why You Should Join
-                        </h2>
-                        <p className="text-white/70 leading-relaxed">
-                            Because the future is built by people who care.
-                            People who show up when others wait. People who
-                            build before they are ready.
-                        </p>
-                        <p className="text-white/70 leading-relaxed">
-                            The DevSphere Apprenticeship Program is your chance
-                            to prove to yourself that you can do it. You will
-                            learn faster than ever. You will meet people who
-                            change how you think. You will discover the thrill
-                            of creating something that did not exist before.
-                        </p>
-                        <p className="text-white/70 leading-relaxed">
-                            If you have the fire to learn and the courage to
-                            start, this is your moment.
-                        </p>
-                    </div>
-
-                    {/* Apply CTA */}
-                    <div className="rounded-xl border border-white/10 bg-white/5 p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                        <div>
-                            <h3 className="font-medium mb-1">How to Apply</h3>
-                            <p className="text-white/70 text-sm">
-                                Fill out the Apprenticeship Recruitment Form.
-                                Tell us about your skills, your interests, and
-                                what drives you. You only need curiosity,
-                                honesty, and commitment.
+                            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
+                                For those who see learning as creation.
+                            </h2>
+                            <p className="text-white/70 leading-relaxed">
+                                At DevSphere, we believe the best way to learn
+                                is to build. The Apprenticeship Program is not a
+                                course. It is not a club role. It is a journey
+                                where you take ideas and turn them into
+                                something real.
+                            </p>
+                            <p className="text-white/70 leading-relaxed">
+                                We created this program for people who are
+                                curious, driven, and restless. People who want
+                                to shape things with their own hands. People who
+                                are not waiting for permission to start.
                             </p>
                         </div>
-                        <Link
-                            href="/signup"
-                            className="inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium border border-white/15 bg-[#e78a53] text-white hover:opacity-90 transition-colors"
-                        >
-                            Apply
-                        </Link>
+
+                        {/* What You Get */}
+                        <div className="space-y-6">
+                            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
+                                What You Get as an Apprentice
+                            </h2>
+                            <div className="space-y-4">
+                                <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                                    <h3 className="font-medium mb-2">
+                                        1. Mentorship that changes you
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        You will work closely with core members
+                                        who care deeply about your growth. They
+                                        will guide you, challenge you, and
+                                        expect the best from you. You will learn
+                                        how to think, not just what to do.
+                                    </p>
+                                </div>
+                                <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                                    <h3 className="font-medium mb-2">
+                                        2. Real work that matters
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        You will take on projects that have
+                                        impact. You will write code, design
+                                        visuals, tell stories, build systems.
+                                        You will see your work live in front of
+                                        people and make a difference.
+                                    </p>
+                                </div>
+                                <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                                    <h3 className="font-medium mb-2">
+                                        3. Recognition for what you create
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        Every task you complete earns you
+                                        points. The best contributors are
+                                        celebrated every month. We tell your
+                                        story to the community because great
+                                        work deserves to be seen.
+                                    </p>
+                                </div>
+                                <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                                    <h3 className="font-medium mb-2">
+                                        4. A path to leadership
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        After three months of consistent effort,
+                                        you can apply to join the DevSphere core
+                                        team. You will lead projects, mentor new
+                                        apprentices, and shape the culture of
+                                        the club. This is where builders become
+                                        leaders.
+                                    </p>
+                                </div>
+                                <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                                    <h3 className="font-medium mb-2">
+                                        5. A community that believes in you
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        You will join a circle of learners who
+                                        dream big and build together. Here,
+                                        everyone is both a student and a
+                                        teacher. We learn from each other, push
+                                        each other, and grow together.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Expectations */}
+                        <div className="space-y-4">
+                            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
+                                What We Expect from You
+                            </h2>
+                            <div className="grid gap-4 md:grid-cols-2">
+                                <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                                    <h3 className="font-medium mb-1">
+                                        Show Up
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        Be present. Be consistent. Do the work
+                                        even when it is hard.
+                                    </p>
+                                </div>
+                                <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                                    <h3 className="font-medium mb-1">
+                                        Collaborate
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        Learn from others. Share what you know.
+                                        Building together is always better than
+                                        building alone.
+                                    </p>
+                                </div>
+                                <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                                    <h3 className="font-medium mb-1">
+                                        Stay Curious
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        Ask questions. Try new things. Curiosity
+                                        is the fuel for creativity.
+                                    </p>
+                                </div>
+                                <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                                    <h3 className="font-medium mb-1">
+                                        Lead by Action
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        Do not wait to be told what to do.
+                                        Start. Build. Fix. Improve. Inspire.
+                                    </p>
+                                </div>
+                                <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                                    <h3 className="font-medium mb-1">
+                                        Own Your Journey
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        What you get from this program depends
+                                        on what you give. You decide how far you
+                                        go.
+                                    </p>
+                                </div>
+                                <div className="rounded-xl border border-white/10 bg-white/5 p-5">
+                                    <h3 className="font-medium mb-1">
+                                        Don't Be Afraid to Make Mistakes
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        Experiment boldly. Mistakes are data —
+                                        reflect, iterate, and improve.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Why Join */}
+                        <div className="space-y-4">
+                            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
+                                Why You Should Join
+                            </h2>
+                            <p className="text-white/70 leading-relaxed">
+                                Because the future is built by people who care.
+                                People who show up when others wait. People who
+                                build before they are ready.
+                            </p>
+                            <p className="text-white/70 leading-relaxed">
+                                The DevSphere Apprenticeship Program is your
+                                chance to prove to yourself that you can do it.
+                                You will learn faster than ever. You will meet
+                                people who change how you think. You will
+                                discover the thrill of creating something that
+                                did not exist before.
+                            </p>
+                            <p className="text-white/70 leading-relaxed">
+                                If you have the fire to learn and the courage to
+                                start, this is your moment.
+                            </p>
+                        </div>
                     </div>
 
-                    <p className="text-center text-white/60 text-sm">
-                        The journey begins the moment you decide to start.
-                    </p>
+                    <div className="mt-auto flex flex-col gap-6 pt-12">
+                        {/* Apply CTA */}
+                        <div className="relative overflow-hidden rounded-2xl border border-[#e78a53]/40 bg-white/5 p-6 shadow-[0_24px_60px_rgba(231,138,83,0.15)] backdrop-blur-lg">
+                            <div
+                                className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(231,138,83,0.35),transparent_55%)]"
+                                aria-hidden
+                            />
+                            <div className="relative flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                                <div className="sm:max-w-lg">
+                                    <h3 className="font-semibold text-lg text-white">
+                                        How to Apply
+                                    </h3>
+                                    <p className="text-white/70 text-sm">
+                                        Fill out the Apprenticeship Recruitment
+                                        Form. Tell us about your skills, your
+                                        interests, and what drives you. You only
+                                        need curiosity, honesty, and commitment.
+                                    </p>
+                                </div>
+                                <Link
+                                    href="/signup"
+                                    className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#e78a53] via-[#f0b268] to-[#ffd3a6] px-6 py-3 text-base font-semibold text-black shadow-[0_18px_40px_rgba(231,138,83,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_24px_50px_rgba(231,138,83,0.45)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffd3a6]"
+                                >
+                                    Apply Now
+                                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-black/10 text-lg text-black transition-transform group-hover:translate-x-1">
+                                        →
+                                    </span>
+                                </Link>
+                            </div>
+                        </div>
+
+                        <p className="text-center text-white/60 text-sm">
+                            The journey begins the moment you decide to start.
+                        </p>
+                    </div>
                 </div>
             </section>
-        </>
+        </div>
     );
 }
